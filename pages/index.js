@@ -3,7 +3,7 @@ import { useState } from "react";
 function Home() {
     return (
         <div>
-            <h1>Olá!</h1>
+            <h1>Olá mundo</h1>
             <Contador />
 
             <br />
