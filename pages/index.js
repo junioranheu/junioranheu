@@ -2,60 +2,42 @@ import { useState } from "react";
 
 function Home() {
     return (
-        <section>
+        <section class="section">
             <title>Anheu</title>
-            
-            <link
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-                integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-                crossOrigin="anonymous"
-            />
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="">Anheu</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Teste 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Teste 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Teste 3</a>
-                        </li>
-                    </ul>
+            {/* <Navbar /> */}
+
+            <div class="container has-text-centered">
+                <div class="mt-6">
+                    <h1 class="title">
+                        Olá, mundo
+                    </h1>
+                    <p class="subtitle">
+                        Esse é meu primeiro site com <strong>React JS</strong>
+                    </p>
                 </div>
-            </nav>
-
-            <div class="container">
-                <h1 class="text-center mt-5">Olá mundo</h1>
 
                 <Contador />
 
-                <div class="mt-5 text-center">
-                    <div class="row">
-                        <div class="col-sm" style={{ backgroundColor: "pink" }}>
+                <div class="mt-6">
+                    <div class="columns">
+                        <div class="column" style={{ backgroundColor: "pink" }}>
                             Coluna 1 de 3
                         </div>
-                        <div class="col-sm" style={{ backgroundColor: "lightBlue" }}>
+                        <div class="column" style={{ backgroundColor: "lightBlue" }}>
                             Coluna 2 de 3
                         </div>
-                        <div class="col-sm" style={{ backgroundColor: "yellow" }}>
+                        <div class="column" style={{ backgroundColor: "yellow" }}>
                             Coluna 3 de 3
                         </div>
                     </div>
                 </div>
 
-                <h6 class="text-center mt-5">/npm run dev/</h6>
+                <p class="subtitle mt-6">
+                    /npm run dev/
+                </p>
             </div>
         </section>
     );
@@ -69,14 +51,35 @@ function Contador() {
     }
 
     return (
-        <div class="mt-5 text-center">
+        <div class="mt-6">
+            <hr />
+
             <div>
-                <p class="font-weight-bold">{contador}</p>
+                <p class="has-text-weight-bold">{contador}</p>
             </div>
 
-            <button class="btn btn-outline-dark mt-1"
+            <button class="button is-dark is-outlined mt-2"
                 onClick={adicionarContador}>Adicionar</button>
         </div>
+    );
+}
+
+function Navbar() {
+    return (
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    {/* <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28"></img> */}
+                    <p>Anheu</p>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </nav>
     );
 }
 
