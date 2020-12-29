@@ -10,24 +10,79 @@ function Home() {
 }
 
 function Navbar() {
+    const [navbarBurger, setNavbarBurger] = useState(false);
+    const [navbarMenu, setNavbarMenu] = useState(false);
+
+    function expandirMenu() {
+        // alert('Status será alterado para: ' + !navbarBurger);
+        setNavbarBurger(!navbarBurger);
+        setNavbarMenu(!navbarMenu);
+    }
+
     return (
         <div>
             <title>Anheu</title>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
-            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <nav class="navbar container" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        {/* <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28"></img> */}
-                        <p>Anheu</p>
+                    <a class="navbar-item" href="/">
+                        <img src="https://static.fabapp.com/113a71cdecd30fe3f73c4f59cdff0b1aa3a18326" width="28" height="28"></img>
                     </a>
 
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+                        onClick={expandirMenu} className={navbarBurger ? "navbar-burger is-active" : "navbar-burger"}>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu" className={navbarMenu ? "navbar-menu is-active" : "navbar-menu"}>
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Início
+                         </a>
+
+                        <a class="navbar-item">
+                            Documentação
+                        </a>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Mais
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    Sobre
+                                </a>
+                                <a class="navbar-item">
+                                    Oi, né
+                                </a>
+                                <a class="navbar-item">
+                                    Contate-me
+                                </a>
+                                <a class="navbar-item">
+                                    Reporte um problema
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary">
+                                    <strong>Cadastre-se</strong>
+                                </a>
+                                <a class="button is-light">
+                                    Entrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -68,6 +123,17 @@ function Body() {
                 <p class="subtitle mt-6">
                     /npm run dev/
                 </p>
+
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input is-primary" type="text" placeholder="Digite sua mensagem aqui..."></input>
+                    </p>
+                    <p class="control">
+                        <a class="button is-primary">
+                            Enviar
+                        </a>
+                    </p>
+                </div>
             </div>
         </section>
     );
@@ -88,7 +154,7 @@ function Contador() {
                 <p class="has-text-weight-bold">{contador}</p>
             </div>
 
-            <button class="button is-dark is-outlined mt-2"
+            <button class="button is-primary is-outlined mt-2"
                 onClick={adicionarContador}>Adicionar</button>
         </div>
     );
