@@ -1,16 +1,44 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 function Home() {
     return (
-        <section class="section">
+        <Fragment>
+            <Navbar />
+            <Body />
+        </Fragment>
+    );
+}
+
+function Navbar() {
+    return (
+        <div>
             <title>Anheu</title>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
-            {/* <Navbar /> */}
+            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        {/* <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28"></img> */}
+                        <p>Anheu</p>
+                    </a>
 
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    );
+}
+
+function Body() {
+    return (
+        <section class="section">
             <div class="container has-text-centered">
-                <div class="mt-6">
+                <div class="mt-4">
                     <h1 class="title">
                         Olá, mundo
                     </h1>
@@ -19,7 +47,9 @@ function Home() {
                     </p>
                 </div>
 
-                <Contador />
+                <div>
+                    <Contador />
+                </div>
 
                 <div class="mt-6">
                     <div class="columns">
@@ -51,7 +81,7 @@ function Contador() {
     }
 
     return (
-        <div class="mt-6">
+        <div>
             <hr />
 
             <div>
@@ -61,25 +91,6 @@ function Contador() {
             <button class="button is-dark is-outlined mt-2"
                 onClick={adicionarContador}>Adicionar</button>
         </div>
-    );
-}
-
-function Navbar() {
-    return (
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                    {/* <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28"></img> */}
-                    <p>Anheu</p>
-                </a>
-
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-        </nav>
     );
 }
 
