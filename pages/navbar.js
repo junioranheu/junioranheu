@@ -12,18 +12,18 @@ function NavbarPika() {
 
     return (
         <div>
-            <title>Anheu</title>
+            {/* <title>Anheu</title> */}
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
-            <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="/">
+            <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+                <div className="container">
+                    <div className="navbar-brand">
+                        <a className="navbar-item" href="/">
                             {/* <img src="https://static.fabapp.com/113a71cdecd30fe3f73c4f59cdff0b1aa3a18326" width="28" height="28"></img> */}
                             <p>Versão 1.0.0</p>
                         </a>
 
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+                        <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
                             onClick={expandirMenu} className={navbarBurger ? "navbar-burger is-active" : "navbar-burger"}>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
@@ -31,42 +31,42 @@ function NavbarPika() {
                         </a>
                     </div>
 
-                    <div id="navbarBasicExample" class="navbar-menu" className={navbarMenu ? "navbar-menu is-active" : "navbar-menu"}>
-                        <div class="navbar-start">
-                            <a class="navbar-item" href="/">
+                    <div id="navbarBasicExample" className="navbar-menu" className={navbarMenu ? "navbar-menu is-active" : "navbar-menu"}>
+                        <div className="navbar-start">
+                            <a className="navbar-item" href="/">
                                 Início
                             </a>
 
-                            <a class="navbar-item" href="/sobre">
+                            <a className="navbar-item" href="/sobre">
                                 Sobre
                             </a>
 
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
+                            <div className="navbar-item has-dropdown is-hoverable">
+                                <a className="navbar-link">
                                     Mais
                                 </a>
 
-                                <div class="navbar-dropdown">
-                                    <a class="navbar-item">
+                                <div className="navbar-dropdown">
+                                    <a className="navbar-item">
                                         Documentação
                                     </a>
-                                    <a class="navbar-item">
+                                    <a className="navbar-item">
                                         Contate-me
                                     </a>
-                                    <a class="navbar-item">
+                                    <a className="navbar-item">
                                         Reporte um problema
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="navbar-end">
-                            <div class="navbar-item">
-                                <div class="buttons">
-                                    <a class="button is-primary">
+                        <div className="navbar-end">
+                            <div className="navbar-item">
+                                <div className="buttons">
+                                    <a className="button is-primary">
                                         <strong>Cadastre-se</strong>
                                     </a>
-                                    <a class="button is-light">
+                                    <a className="button is-light">
                                         Entrar
                                     </a>
                                 </div>

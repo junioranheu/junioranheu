@@ -4,6 +4,8 @@ import NavbarPika from "./navbar";
 function Home() {
     return (
         <Fragment>
+            <title>Início</title>
+
             <NavbarPika />
             <Body />
         </Fragment>
@@ -12,13 +14,13 @@ function Home() {
 
 function Body() {
     return (
-        <section class="section">
-            <div class="container has-text-centered">
-                <div class="mt-4">
-                    <h1 class="title">
+        <section className="section">
+            <div className="container has-text-centered">
+                <div className="mt-4">
+                    <h1 className="title">
                         Olá, mundo
                     </h1>
-                    <p class="subtitle">
+                    <p className="subtitle">
                         Esse é meu primeiro site com <strong>React JS</strong>
                     </p>
                 </div>
@@ -27,30 +29,30 @@ function Body() {
                     <Contador />
                 </div>
 
-                <div class="mt-6">
-                    <div class="columns">
-                        <div class="column" style={{ backgroundColor: "pink" }}>
+                <div className="mt-6">
+                    <div className="columns">
+                        <div className="column" style={{ backgroundColor: "pink" }}>
                             Coluna 1 de 3
                         </div>
-                        <div class="column" style={{ backgroundColor: "lightBlue" }}>
+                        <div className="column" style={{ backgroundColor: "lightBlue" }}>
                             Coluna 2 de 3
                         </div>
-                        <div class="column" style={{ backgroundColor: "yellow" }}>
+                        <div className="column" style={{ backgroundColor: "yellow" }}>
                             Coluna 3 de 3
                         </div>
                     </div>
                 </div>
 
-                <p class="subtitle mt-6">
+                <p className="subtitle mt-6">
                     /npm run dev/
                 </p>
 
-                <div class="field is-grouped">
-                    <p class="control is-expanded">
-                        <input class="input is-primary" type="text" placeholder="Digite sua mensagem aqui..."></input>
+                <div className="field is-grouped">
+                    <p className="control is-expanded">
+                        <input className="input is-primary" type="text" placeholder="Digite sua mensagem aqui..."></input>
                     </p>
-                    <p class="control">
-                        <a class="button is-primary">
+                    <p className="control">
+                        <a className="button is-primary">
                             Enviar
                         </a>
                     </p>
@@ -72,10 +74,10 @@ function Contador() {
             <hr />
 
             <div>
-                <p class="has-text-weight-bold">{contador}</p>
+                <p className="has-text-weight-bold">{contador}</p>
             </div>
 
-            <button class="button is-primary is-outlined mt-2"
+            <button className="button is-primary is-outlined mt-2"
                 onClick={adicionarContador}>Adicionar</button>
         </div>
     );

@@ -4,6 +4,8 @@ import NavbarPika from "./navbar";
 function Sobre() {
   return (
     <Fragment>
+      <title>Sobre</title>
+
       <NavbarPika />
       <Body />
     </Fragment>
