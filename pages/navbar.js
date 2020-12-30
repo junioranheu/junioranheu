@@ -48,8 +48,8 @@ function NavbarPika() {
                                 </a>
 
                                 <div className="navbar-dropdown">
-                                    <a className="navbar-item">
-                                        Documentação
+                                    <a className="navbar-item" href="/teste">
+                                        Teste
                                     </a>
                                     <a className="navbar-item">
                                         Contate-me
