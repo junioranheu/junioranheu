@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import NavbarPika from "./navbar";
 import aulaService from '../services/AulaService';
 
@@ -16,6 +16,18 @@ function Teste() {
 
 function Body() {
     const [aulas, setAulas] = useState(null);
+        
+    useEffect(() => {
+        aulaService.pegarAulas()
+            .then(function (resposta) {
+                console.log(resposta.data);
+                setAulas(resposta.data);
+            })
+            .catch((error) => {
+                console.log("Deu zika");
+                console.log(error);
+            });
+    }, []);
 
     return (
         <section className="section animate__animated animate__fadeIn">
@@ -33,7 +45,7 @@ function Body() {
                     {
                         aulas === null ?
 
-                        <button className="button is-primary is-outlined" onClick={CarregarAulas}>Não clique aqui</button>
+                            <p>Deu ruim</p>
 
                             :
 
@@ -43,18 +55,6 @@ function Body() {
             </div>
         </section>
     );
-
-    function CarregarAulas() {
-        aulaService.pegarAulas()
-            .then(function (resposta) {
-                console.log(resposta.data);
-                setAulas(resposta.data);
-            })
-            .catch((error) => {
-                console.log("Deu zika");
-                console.log(error);
-            });
-    }
 
     function Lista() {
         return (
