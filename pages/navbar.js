@@ -14,7 +14,7 @@ function NavbarPika() {
         <div>
             {/* <title>Anheu</title> */}
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
             <nav className="navbar is-light" role="navigation" aria-label="main navigation">
                 <div className="container">
@@ -38,8 +38,8 @@ function NavbarPika() {
                                 Início
                             </a>
 
-                            <a className="navbar-item" href="/chat">
-                                Chat
+                            <a className="navbar-item" href="/teste">
+                                Teste
                             </a>
 
                             <div className="navbar-item has-dropdown is-hoverable">
@@ -48,8 +48,8 @@ function NavbarPika() {
                                 </a>
 
                                 <div className="navbar-dropdown">
-                                    <a className="navbar-item" href="/teste">
-                                        Teste
+                                    <a className="navbar-item" href="/chat">
+                                        Chat
                                     </a>
                                     <a className="navbar-item">
                                         Contate-me

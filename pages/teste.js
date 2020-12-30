@@ -1,5 +1,6 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import NavbarPika from "./navbar";
+import aulaService from '../services/AulaService';
 
 function Teste() {
     return (
@@ -12,7 +13,10 @@ function Teste() {
     );
 }
 
+
 function Body() {
+    const [aulas, setAulas] = useState(null);
+
     return (
         <section className="section animate__animated animate__fadeIn">
             <div className="container has-text-centered">
@@ -21,55 +25,54 @@ function Body() {
                         Olá, mundo
                     </h1>
                     <p className="subtitle">
-                        Página com cards em <strong>React JS</strong>
+                        Página com conexão com o BD, via API, no <strong>React JS</strong>
                     </p>
                 </div>
 
                 <div className="mt-6">
-                    <Lista />
+                    {
+                        aulas === null ?
+
+                        <button className="button is-primary is-outlined" onClick={CarregarAulas}>Não clique aqui</button>
+
+                            :
+
+                            <Lista />
+                    }
                 </div>
             </div>
         </section>
     );
 
-    function Lista() {
-        const DUMMY_DATA = [
-            {
-                id: 1,
-                nome: "Teste",
-                desc: "Testando essa djonga",
-                img: "https://images.pexels.com/photos/556668/pexels-photo-556668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=480"
-            },
-            {
-                id: 2,
-                nome: "Kapas",
-                desc: "Kapas kapas & kapas",
-                img: "https://images.pexels.com/photos/556666/pexels-photo-556666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=480"
-            },
-            {
-                id: 3,
-                nome: "Louquinha",
-                desc: "Louca... louquinha!",
-                img: "https://images.pexels.com/photos/310418/pexels-photo-310418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=480"
-            }
-        ];
+    function CarregarAulas() {
+        aulaService.pegarAulas()
+            .then(function (resposta) {
+                console.log(resposta.data);
+                setAulas(resposta.data);
+            })
+            .catch((error) => {
+                console.log("Deu zika");
+                console.log(error);
+            });
+    }
 
+    function Lista() {
         return (
-            <div className="tile is-ancestor">
+            <div className="tile is-ancestor animate__animated animate__fadeIn">
                 <div className="tile is-vertical is-12">
                     <div className="tile">
                         {
-                            DUMMY_DATA.map(item => {
+                            aulas.map(item => {
                                 return (
-                                    <div className="tile is-parent" style={{ cursor: "pointer" }}>
+                                    <div className="tile is-parent" style={{ cursor: "pointer" }} key={item.id}>
                                         <article className="tile is-child">
                                             <p className="subtitle">
                                                 <span className="has-text-weight-bold">{item.nome}</span>
-                                                <br />{item.desc}
+                                                <br />{item.descricao}
                                             </p>
 
                                             <figure className="image is-1by1">
-                                                <img title={item.nome} src={item.img}></img>
+                                                <img title={item.nome} src={item.imagem}></img>
                                             </figure>
                                         </article>
                                     </div>
