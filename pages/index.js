@@ -14,7 +14,7 @@ function Home() {
 
 function Body() {
     return (
-        <section className="section">
+        <section className="section animate__animated animate__fadeIn">
             <div className="container has-text-centered">
                 <div className="mt-4">
                     <h1 className="title">
@@ -60,27 +60,27 @@ function Body() {
             </div>
         </section>
     );
-}
 
-function Contador() {
-    const [contador, setContador] = useState(1);
+    function Contador() {
+        const [contador, setContador] = useState(1);
 
-    function adicionarContador() {
-        setContador(contador + 1);
-    }
+        function adicionarContador() {
+            setContador(contador + 1);
+        }
 
-    return (
-        <div>
-            <hr />
-
+        return (
             <div>
-                <p className="has-text-weight-bold">{contador}</p>
-            </div>
+                <hr />
 
-            <button className="button is-primary is-outlined mt-2"
-                onClick={adicionarContador}>Adicionar</button>
-        </div>
-    );
+                <div>
+                    <p className="has-text-weight-bold">{contador}</p>
+                </div>
+
+                <button className="button is-primary is-outlined mt-2"
+                    onClick={adicionarContador}>Adicionar</button>
+            </div>
+        );
+    }
 }
 
 export default Home;
