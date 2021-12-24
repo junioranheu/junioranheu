@@ -1,4 +1,4 @@
-### Não tem nada de interessante por aqui — ainda!
+### Olá!
 
 <!--
 **junioranheu/junioranheu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
