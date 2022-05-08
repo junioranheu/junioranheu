@@ -4,7 +4,7 @@ Hi! I'm Junior 👋
 * 💻  I'm currently working as a .NET dev;
 * 🌍  I'm based in Lorena, São Paulo;
 * ✉️  You can contact me at [junioranheu@gmail.com](mailto:junioranheu@gmail.com);
-* 🧠  I'm learning React Native;
+* 🧠  I'm learning React Native and Unit Testing (xUnit in .NET);
 * ⚡  I know C#, .NET Framework/Core, React.js/Next.js, MySQL and SQL Server;
 
 ### Skills
