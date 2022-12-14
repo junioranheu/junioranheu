@@ -5,7 +5,7 @@ Hi! I'm Junior 👋
 * 🌍  I'm based in Lorena, São Paulo;
 * ✉️  You can contact me at [junioranheu@gmail.com](mailto:junioranheu@gmail.com);
 * ⚡  I'm experienced in C#, .NET Framework/Core, React.js/Next.js, MySQL and SQL Server. And I learned a bit of React Native and Unit Testing (xUnit in .NET);
-* 🧠  I'm currently learning Angular;
+* 🧠  I'm currently learning Angular and Azure;
 
 ### Skills
 
