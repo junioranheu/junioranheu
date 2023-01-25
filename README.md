@@ -1,11 +1,15 @@
 Hi! I'm Junior 👋 
 =======================
 
-* 💻  I'm currently working as a .NET dev;
+* 💻  I'm currently working as a .NET dev — aiming to be a senior in a few time;
 * 🌍  I'm based in Lorena, São Paulo;
 * ✉️  You can contact me at [junioranheu@gmail.com](mailto:junioranheu@gmail.com);
-* ⚡  I'm experienced in C#, .NET Framework/Core, React.js/Next.js, MySQL and SQL Server. And I learned a bit of React Native and Unit Testing (xUnit in .NET);
-* 🧠  I'm currently learning Angular and Azure;
+* ⚡  I'm experienced in C#, .NET Framework/Core, React.js/Next.js, Angular, MySQL and SQL Server — moreover I used a bit of React Native and Unit Testing (xUnit in .NET);
+* 🧠  I'm currently improving my Angular/front-end skills and "learning" Azure (I'm having direct contact with azure ecosystem);
+
+### Portfolio
+
+👉 https://anheu.vercel.app/
 
 ### Skills
 
