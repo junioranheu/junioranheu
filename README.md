@@ -5,7 +5,7 @@ Hi! I'm Junior 👋
 * 🌍  I'm based in Lorena, São Paulo, working from home for a great company in Rio de Janeiro;
 * ✉️  You can contact me at [junioranheu@gmail.com](mailto:junioranheu@gmail.com);
 * ⚡  I'm a full stack dev experienced in C#, .NET Framework/Core, React.js/Next.js, Angular, MySQL and SQL Server — moreover I used a bit of React Native, Unit Testing (xUnit in .NET) and Python;
-* 🧠  I'm currently improving my Angular/front-end skills, unit testing, Vertical Slice Architecture and "learning" Azure (I'm having direct contact with Azure DevOps ecosystem);
+* 🧠  I'm currently improving my Angular/front-end skills, unit testing, the Vertical Slice Architecture and "learning" Azure (I'm having direct contact with Azure DevOps ecosystem);
 
 ### Portfolio
 
