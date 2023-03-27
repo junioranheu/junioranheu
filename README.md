@@ -7,7 +7,7 @@ Hi! I'm Junior 👋
 * ⚡  I'm a full stack dev experienced in C#, .NET Framework/Core, React.js/Next.js, Angular, MySQL and SQL Server — moreover I used a bit of React Native, xUnit and Python;
 * 🧠  I'm currently improving my Angular/front-end skills, unit testing, Vertical Slice architecture, Azure (direct contact with Azure DevOps ecosystem) and mentoring coworkers;
 
-### Portfolio
+### Portfolio (YOU MUST CHECK IT OUT)
 
 👉 https://anheu.vercel.app/
 
@@ -30,7 +30,8 @@ Hi! I'm Junior 👋
 
 ### Socials
 
-<p align="left"> <a href="https://discord.com/users/juniorsllw#9902" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/junioranheu/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
+<!-- <p align="left"> <a href="https://discord.com/users/juniorsllw#9902" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /></a> -->
+<a href="https://www.linkedin.com/in/junioranheu/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
 
 ### Languages
 
