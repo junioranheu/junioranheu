@@ -1,6 +1,7 @@
-Hi! I'm Junior 👋 
+Hello, world 👋 
 =======================
 
+* 🧍‍♂️ My name is Junior;
 * 💻  I'm currently working as a mid-level .NET full stack dev — aiming to be a senior soon;
 * 🌍  I'm based in Lorena, São Paulo, working from home for a great company in Rio de Janeiro;
 * ✉️  You can mail me at junioranheu@gmail.com or message me on <a href="https://www.linkedin.com/in/junioranheu/" target="_blank" rel="noreferrer">LinkedIn</a>;
