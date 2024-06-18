@@ -5,7 +5,7 @@ Hello, world 👋
 * 💻  I'm currently working as a .NET full stack dev;
 * 🌍  I'm based in Lorena, São Paulo, working from home for a great company in Rio de Janeiro;
 * ✉️  You can mail me at junioranheu@gmail.com or message me on <a href="https://www.linkedin.com/in/junioranheu/" target="_blank" rel="noreferrer">LinkedIn</a>;
-* ⚡  I'm a full stack dev experienced in C#, .NET Framework/Core, React.js/Next.js, Angular, MySQL and SQL Server;
+* ⚡  I'm a full stack dev experienced in C#, .NET, React.js/Next.js, Angular, MySQL, SQL Server, PostgreSQL and Azure;
 * 🧠  I'm currently improving my Angular/front-end skills, unit testing, Azure DevOps and mentoring coworkers.
 
 ### Portfolios 
